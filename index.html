@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        // $(document).ready(function(){
+        //     $('button').click(function(){
+        //         $(".uzain").hide();
+        //     });
+        // });
+        // $(document).ready(function(){
+        //     $("p").dblclick(function(){
+        //         $(this).hide();
+        //     })
+        // });
+        // $(document).ready(function(){
+        //     $("p").mouseenter(function(){
+        //         alert("Vanished")
+        //     })
+        // });
+        // $(document).ready(function(){
+        //     $("p").mouseleave(function(){
+        //         $(this).hide();
+        //     })
+        // });
+        // $(document).ready(function(){
+        //     $("p").mousedown(function(){
+        //         alert("Hurry");
+        //     })
+        // });
+        // $(document).ready(function(){
+        //     $("p").mousedown(function(){
+        //         alert("Hurry");
+        //     })
+        // });
+        // $(document).ready(function(){
+        //     $(".uzain").hover(function(){
+        //         alert("Hurry, welcome");
+        //     },function(){
+        //         alert("Good bye");
+        // })});
+        // $(document).ready(function(){
+        //     $("input").focus(function(){
+        //         $(this).css("background-color", "red");
+        //     })});
+        // $(document).ready(function(){
+        //     $("input").blur(function(){
+        //         $(this).css("background-color", "red");
+        //     })});
+        // $(document).ready(function(){
+        //     $("input").on({
+        //         mouseenter: function(){
+        //             alert("Hello");
+        //         },
+        //         mouseleave: function(){
+        //             $(this).css("background-color","black");
+        //         }
+        //     })
+        // });
+        
+        // $(document).ready(function(){
+        //     $(".hide").click(function(){
+        //         $(".uzain").hide();
+        //     })
+        // });
+        // $(document).ready(function(){
+        //     $(".show").click(function(){
+        //         $(".uzain").show();
+        //     })
+        // });
+        // $(document).ready(function(){
+        // //     $("button").click(function(){
+        // //         $(".uzain").toggle();
+        // //     })
+        // // });
+        // $(document).ready(function(){
+        //     $("button.fadein").click(function(){
+        //         $("#box1").fadeIn();
+        //         $("#box2").fadeIn("slow");
+        //         $("#box3").fadeIn(3000);
+        //     })
+        // });
+        // $(document).ready(function(){
+        //     $("button.fadeout").click(function(){
+        //         $("#box1").fadeOut();
+        //         $("#box2").fadeout("slow");
+        //         $("#box3").fadeout(300);
+        //     })
+        // });
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         $("#box1").fadeToggle();
+        //         $("#box2").fadeToggle("slow");
+        //         $("#box3").fadeToggle(300);
+        //     })
+        // });
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         $("#box1").fadeTo("slow", 0.5);
+        //         $("#box2").fadeToggle("slow");
+        //         $("#box3").fadeToggle(300);
+        //     })
+        // });
+        // $(document).ready(function(){
+        //     $(".before").click(function(){
+        //         $(".after").slideDown("slow");
+        //     })
+        // });
+        // $(document).ready(function(){
+        //     $(".before").click(function(){
+        //         $(".after").slideUp("slow");
+        //     })
+        // });
+        // $(document).ready(function(){
+        //     $(".before").click(function(){
+        //         $(".after").slideToggle("slow");
+        //     })
+        // });
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         $(".before").animate({    
+        //             left: 'toggle',
+        //            height: 'show',
+        //            width: 'hide'})
+        //     })
+        // });
+        // $(document).ready(function(){
+        //  $("button").click(function(){
+        //     var div = $(".before");
+        //     div.animate({height:'300px'},"slow")
+        // })});
+        // $(document).ready(function(){
+        //  $(".before").click(function(){
+        //     $(".after").slideDown(5000);
+
+        // });
+        //  $(".stop").click(function(){
+        //     $(".after").stop();
+        //  })
+        // });
+
+        // $(document).ready(function(){
+        //     $(".stop").click(function(){
+        //         $("div").slideToggle("slow",function(){
+        //             alert("Completed")
+        //         }).slideDown(3000)
+        //     })
+        // })
+        // $(document).ready(function(){
+        //   $(".stop").click(function(){
+        //     alert("Text:" +  $(".uzain").text());
+        //   });
+        //   $(".stop1").click(function(){
+        //     alert("Text:" +  $(".uzain").html());
+        //   });
+        // })
+        // $(document).ready(function(){
+        //     $(".stop").click(function(){
+        //         alert("Value is :" + $("a").attr("href"))
+        //     })
+        // })
+
+
+        // $(document).ready(function(){
+        //     $(".get").click(function(){
+        //         alert($(".website").attr("href"));
+        //     })
+        // })
+
+        // $(document).ready(function(){
+        //     $(".button1").click(function(){
+        //         $(".text1").text("Hello World!")
+        //     });
+        //     $(".button2").click(function(){
+        //         $(".text2").html("<h1>Hello World!</h1>")
+        //     });
+        //     $(".button3").click(function(){
+        //         $(".input1").val("Hello World!");
+        //     });
+
+        // })
+
+        // $(document).ready(function(){
+        // //     $(".button1").click(function(){
+        // //         $(".text1").text(function(i, orgtext){
+        // //             return "Old Text: " + orgtext + "New Text: Hello World! (index: " + i + ")"; 
+        // //         });
+        // //     });
+        // //     $(".button2").click(function(){
+        // //         $(".text2").html(function(i, orghtml){
+        // //             return "Old Html: " + orghtml + "New Html: <b>Hello World!</b> (index: " + i + ")"; 
+        // //         })
+        // //     })
+        // // })
+
+        // $(document).ready(function(){
+        //     // $(".set").click(function(){
+        //     //     $(".website").attr({
+        //     //         "href": "https://www.youtube.com/results?search_query=php+debugging+using+xdebug+with+visual+studio+code+working+explain+in+hindi",
+        //     //         "title":"UzAIN"
+        //     // });
+        //     // });
+        //     $(".set").click(function(){
+        //         $(".website").attr("href",function(i, orgWeb){
+        //             return orgWeb + "/services"
+        //         })
+        //     })
+        // })
+
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         $(".name").append("Siddiqui");
+        //     });
+        //     $("button").click(function(){
+        //         $(".field").append("Engineering");
+        //     });
+        // })
+        // $(document).ready(function(){
+        //     $(".button1").click(function(){
+        //         $(".name").prepend("Muhammad");
+        //     });
+        //     $("button").click(function(){
+        //         $(".field").prepend("Advance");
+        //     });
+        // })
+        // function appendEle(){
+        //     var1 = `<p>Uzain</p>`;
+        //     var2 = $("<p></p>").text("Uzain");
+        //     var3 = document.createElement("p");
+        //     var3.innerHTML = "Uzain";
+        //     $("body").append(var1,var2, var3);
+        // }
+
+        // $(document).ready(function(){
+        //     $(".button1").click(function(){
+        //         $("p").remove(".div1");
+        //     });
+        //     $("button").click(function(){
+        //         $(".table").empty();
+        //     });
+        // });
+
+
+
+    </script>
+    <title>Jquery learning</title>
+</head>
+<body>
+    <p class="name">Uzain Ali </p>
+    <div class="table">
+    <table>
+        <th>table
+            <tr>Hello</tr>
+            <tr>Hello</tr>
+            <tr>Hello</tr>
+        </th>
+        <th>
+            <tr>Hello</tr>
+            <tr>Hello</tr>
+            <tr>Hello</tr>
+        </th>
+        <th>
+            <tr>Hello</tr>
+            <tr>Hello</tr>
+            <tr>Hello</tr>
+        </th>
+    </table>
+    <p class="div1">Hello world</p>
+</div>
+    <p class="field">Software </p>
+    <button>Empty</button>
+    <button class="button1">Remove</button>
+
+
+
+      <!-- <p class="uzain">Hello <strong>this</strong> is uzain</p>
+   <!-- <button class="fadein">Fade-in</button>  -->
+   <!-- <input type="text" value="Uzain" class="data">
+    <button class="stop">Move</button>
+    <a href="https://venturesync.online/">Venture Sync</a>
+    <button class="stop1">Move</button> -->
+
+    <!-- <div id="box1" style="width: 50px; height: 50px; background-color: red; margin-top: 10px;"></div>
+    <div id="box2" style="width: 50px; height: 50px; background-color: blue; margin-top: 10px;"></div>
+    <div id="box3" style="width: 50px; height: 50px; background-color: black; margin-top: 10px;"></div>
+</body>  -->
+
+    <!-- <div class="before" style="background:#98bf21;height:50px;width:500px;position:absolute;">Hello!</div>
+    <!-- <div class="after" style="background:#98bf21;height:100px;width:500px; display: none;">World</div>-->
+     <!-- <button class="set">Set the Value</button>
+    <a href="https://venturesync.online/" class="website">Venture Sync</a>  -->
+
+    <!-- <p class="text1">This is uzain</p>
+    <p class="text2">This is Ali</p>
+    <input class="input1" type="text" value="Uzain Ali">
+    <br>
+    <br>
+    <button class="button1">Set text</button>
+    <button class="button2">Set Html</button>
+    <button class="button3">Set input</button> -->
+
+</html>

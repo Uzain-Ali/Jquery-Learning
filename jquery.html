@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .important{
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            padding: 10px;
+            margin: 30px;
+            border: 2px solid black;
+        }
+
+        .red{
+            color: red;
+        }
+    </style>
+    <script>
+        // $(document).ready(function(){
+        //     $(".magic").click(function(){
+        //         $("h1, h2, p").addClass("red");
+        //         $("div").addClass("important red");
+        //     });
+        //     $(".magicVanished").click(function(){
+        //         $("h1, h2, p").removeClass("red");
+        //         $("div").removeClass("important red");
+        //     });
+        //     $("button").click(function(){
+        //         $("h1, h2, p").toggleClass("red");
+        //         $("div").toggleClass("important red");
+        //     });
+        // })
+
+        // $(document).ready(function(){
+        //     $(".magic").click(function(){
+        //         $("h1, h2, p").css("background-color","red")
+        //     });
+        //     $(".magicVanished").click(function(){
+        //         $("h1, h2, p").css({"background-color":"red", "color":"blue"})
+        //     });
+        // })
+
+        // $(document).ready(function(){
+            // $(".magic").click(function(){
+            //     var txt = "";
+            //     txt += "Width: " + $(".important").width() + "<br>";
+            //     txt += "Height: " + $(".important").height();
+            //     $(".important").html(txt);
+            // });
+            // $(".magic").click(function(){
+            //     var txt = "";
+            //     txt += "InnerWidth: " + $(".important").innerWidth() + "<br>";
+            //     txt += "InnerHeight: " + $(".important").innerHeight();
+            //     $(".important").html(txt);
+            // });
+            // $(".magic").click(function(){
+            //     var txt = "";
+            //     txt += "OuterWidth: " + $(".important").outerWidth(true) + "<br>";
+            //     txt += "OuterHeight: " + $(".important").outerHeight(true);
+            //     $(".important").html(txt);
+            // });
+            // $(".magic").click(function(){
+            //     var txt = "";
+            //     txt += "Document Width: " + $(document).outerWidth(true) + "<br>";
+            //     txt += "ViewPoint Height: " + $(window).outerHeight(true);
+            //     $(".important").html(txt);
+            // });
+    // })
+    $(document).ready(function(){
+        $(".magic").click(function(){
+            $(".important").width(500).height(900);
+        })
+    })
+
+
+    </script>
+    <title>jQuery</title>
+</head>
+<body>
+    <div class="important"></div>
+    <h1>Uzain</h1>
+    <h2>ALi</h2>
+    
+    <p>uzain ali</p>
+
+    <div>This is uzain ali</div>
+    <button class="magic"> Magic</button>
+    <button class="magicVanished">Magic?</button>
+</body>
+</html>

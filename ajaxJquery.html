@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         $(".div1").load("doc.txt p");
+        //     })
+        // });
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         $(".div1").load("doc.txt", function(responseTxt, statusTxt,xhr){
+        //             if(statusTxt == "success"){
+        //                 alert("Server is Responding");
+        //             }
+        //             if(statusTxt == "error"){
+        //                 alert("Error: "+ xhr.status + ":" + xhr.statusTxt);
+        //             }
+        //         });
+        //     })
+        // })
+
+        $(document).ready(function(){
+  $("button").click(function(){
+    $.post("response.asp",
+    {
+      name: "Donald Duck",
+      city: "Duckburg"
+    },
+    function(data,status){
+      alert("Data: " + data + "\nStatus: " + status);
+    });
+  });
+});
+    </script>
+    <title>Ajax with Jquery</title>
+</head>
+<body>
+
+    <p class="div1"> Hello from Client..</p>
+    <button>Click</button>
+</body>
+</html>

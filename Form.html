@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="import" href="component.html">
+    <title>Login/Signup Form</title>
+</head>
+<body>
+    <nav class="navbar bg-secondary navbar-dark navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand " href=""> Thought Threads </a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">
+                  <a class="nav-link" href="">Home
+                  </a>
+              </li>
+              <li class="dropdown nav-item">
+                <a class="nav-link dropdown-toggle"  href="#" data-toggle="dropdown">Category</a>
+                <div class="dropdown-menu ">
+                    <a href="#" class="dropdown-item">Technology</a>
+                    <a href="#" class="dropdown-item">Agriculture</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">My Blogs</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link " href="">         
+                     <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="">         
+                     <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="">         
+                     <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+
+            </ul>
+                </div>
+        </div>
+    </nav>
+
+    <div class="content container mt-5">
+        <div class="row">
+            <div class="col-md-4 d-flex flex-column justify-content-center">
+                <div class="card  card-user">
+                    <div class="header">
+                        <h3 class="card-title text-center  h-100">Login Form</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" name="email" id="email" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" name="password" id="password" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <a href="">Forget Password</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="button" class="form-control border border-success" value="Submit" name="submit" id="submit">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card card-user">
+                    <div class="header">
+                        <h2 class="h2 card-title text-center  h-100 border-radius-5">Registration Form</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6 pr-1">
+                                <div class="form-group">
+                                    <label for="username">Username</label>
+                                    <input class="form-control" type="text" name="username" id="username">
+                                </div>
+                            </div>
+                            <div class="col-md-6 pl-1">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input class="form-control" type="email" name="email" id="email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-1">
+                            <div class="col-md-6 pr-1">
+                                <div class="form-group">
+                                    <label for="firstname">First Name</label>
+                                    <input class="form-control" type="text" name="firstname" id="firstname">
+                                </div>
+                            </div>
+                            <div class="col-md-6 pr-1">
+                                <div class="form-group">
+                                    <label for="lastname">Last Name</label>
+                                    <input class="form-control" type="text" name="lastname" id="lastname">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-1">
+                            <div class="col-md-6 pr-1">
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input class="form-control" type="text" name="password" id="password">
+                                </div>
+                            </div>
+                            <div class="col-md-6 pr-1">
+                                <div class="form-group">
+                                    <label for="cpassword">Confirm Password</label>
+                                    <input class="form-control" type="text" name="cpassword" id="cpassword">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="gender" class="col-md-2 control-label">Gender</label>
+                                <div class="col-md-10">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="radio-inline">
+                                                    <input type="radio" name="gender" id="female" value="female">
+                                                    <label for="female">Female</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="radio-inline">
+                                                    <input type="radio" name="gender" id="male" value="male">
+                                                    <label for="male">Male</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="radio-inline">
+                                                    <input type="radio" name="gender" id="other" value="other">
+                                                    <label for="other">Other</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-1">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="address">Address</label>
+                                    <input class="form-control" type="text" name="address" id="address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-4 ">
+                                <div class="form-group">
+                                    <label for="city">City</label>
+                                    <select name="city" id="city" class="form-control">
+                                        <option value="Select" >Select</option>
+                                        <option value="karachi">Karachi</option>
+                                        <option value="lahore">Lahore</option>
+                                        <option value="multan">Multan</option>
+                                        <option value="hyderabad">Hyderabad</option>
+                                        <option value="sargodha">Sargodha</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="country">Country</label>
+                                    <select name="country" id="country" class="form-control">
+                                        <option value="Select">Select</option>
+                                        <option value="karachi">Pakistan</option>
+                                        <option value="lahore">India</option>
+                                        <option value="multan">China</option>
+                                        <option value="hyderabad">Iran</option>
+                                        <option value="srilanka">Srilanka</option>
+                                        <option value="turkey">Turkey</option>
+                                        <option value="bangladesh">Bangladesh</option>
+                                    </select>                                
+                                </div>
+                            </div>
+                            <div class="col-md-4 ">
+                                <div class="form-group">
+                                    <label for="postal">Postal Code</label>
+                                    <input class="form-control" type="text" name="postal" id="postal">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="checkbox" name="tick" id="tick">                
+                                    <label for="tick" class="control-label">I agree to the <a href="">terms and conditions</a> as set out by the user agreement.</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="button" class="border border-success form-control" value="Submit">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-5 bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-3">
+                    <h5>Quotation</h5>
+                    <p>Blogs are the modern-day parchment, where thoughts <br> are inked and ideas take flight, weaving a digital tapestry of <br> knowledge and creativity.</p>
+                </div>
+                <div class="col-md-3 mt-3">
+                    <h5>Pages</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Category</a></li>
+                        <li><a href="">My Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mt-3">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: uzain@godaitech.com</li>
+                        <li>Phone: 03152188387</li>
+                        <li>Address: R 470 Shadman</li>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; Uzain Ali</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
